@@ -9,8 +9,8 @@ def get_first_name_of_season_winner(data, season)
             return dict[:name]
           end
         end
-      }
-      }
+      }}
+    end
   }
 end
 
