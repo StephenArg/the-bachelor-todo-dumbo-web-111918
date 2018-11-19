@@ -4,6 +4,7 @@ def get_first_name_of_season_winner(data, season)
     if key == "season 30"
       value.each{|dict|
         if dict["status"] == "Winner"
+          binding.pry
           return dict["name"]
         end
       }
