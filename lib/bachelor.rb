@@ -3,13 +3,10 @@ def get_first_name_of_season_winner(data, season)
   data.each{|key, value|
     if key == "season 30"
       value.each{|dict|
-        dict.each{|key1, value1|
-        if key1 == "status"
-          if value1 == "Winner"
-            return dict[:name]
-          end
+        if dict["status"] == "Winner"
+          return dict["name"]
         end
-      }}
+      }
     end
   }
 end
